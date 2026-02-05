@@ -3,13 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* debug */
-    padding: 0.1rem;
-    border: 1px solid cyan;
 }
 
 body {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 header {
@@ -31,21 +28,39 @@ header {
     .header-description {
         margin: 1rem 6rem;
     }
-    margin-bottom: 4rem;
+
+    .button-download-discord {
+        border-radius: 1rem;
+        padding: 0.5rem;
+        background-color: white;
+        color: black;
+    }
+
+    .button-open-discord {
+        border-radius: 1rem;
+        padding: 0.5rem;
+        background-color: black;
+        color: white;
+    }
+
+    padding-bottom: 4rem;
 }
 
-.button-discord {
-    background-color: transparent;
+.discord-logo {
+    img {
+        width: 100px;
+    }
 }
 
 .button-access {
     background-color: white;
     border-radius: 1rem;
+    padding: 0rem 0.5rem
 
 }
 
 .menu {
-    margin: 1rem 1rem;
+    margin: 0rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,26 +73,53 @@ header {
 }
 
 .container {
+    padding-top: 3rem;
     min-width: 400px;
     width: 80%;
     margin: 0 auto;
     background-color: rgba(245, 242, 242, 0.315)
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 15px
 }
+
 .main-item {
     width: calc(100%/3 - (15px*2 /3));
     text-align: center;
+
     img {
-        width: 100%;;
+        width: 100%;
+        ;
     }
 }
+
 .double {
     width: calc((100%/3 - (15px*2 /3))*2);
 }
+
 .full {
     width: 100%;
+
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .download-mac {
+        border-radius: 1rem;
+        padding: 0.5rem;
+        background-color: #8ea1e2;
+        color: white;
+    }
+
+    margin-bottom: 3rem;
+}
+
+.nav-footer {
+    background-color: black;
+    color: white;
 }
