@@ -53,17 +53,31 @@ header {
 
 .items {
     display: flex;
+    gap: 5px;
     justify-content: space-evenly;
-}
-
-body {
-
-    /* for debugging */
-    background-color: yellow
 }
 
 .container {
     min-width: 400px;
     width: 80%;
     margin: 0 auto;
+    background-color: rgba(245, 242, 242, 0.315)
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.main-item {
+    width: calc(100%/3 - (15px*2 /3));
+    text-align: center;
+    img {
+        width: 100%;;
+    }
+}
+.double {
+    width: calc((100%/3 - (15px*2 /3))*2);
+}
+.full {
+    width: 100%;
 }
