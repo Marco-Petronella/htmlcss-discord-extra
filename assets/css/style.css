@@ -7,12 +7,61 @@
     padding: 0.1rem;
     border: 1px solid cyan;
 }
-nav {
-    display: flex;
-}
+
 body {
+    font-size: 10px;
+}
+
+header {
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 
 }
+
+.head-center {
+    text-align: center;
+
+    >h1 {
+        margin: 4rem 0 1rem 0;
+    }
+
+    .header-description {
+        margin: 1rem 6rem;
+    }
+    margin-bottom: 4rem;
+}
+
+.button-discord {
+    background-color: transparent;
+}
+
+.button-access {
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+.menu {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+
+    /* for debugging */
+    background-color: yellow
+}
+
 .container {
     min-width: 400px;
     width: 80%;
